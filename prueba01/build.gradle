@@ -23,6 +23,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.22' // Verifica la versión actual
 	annotationProcessor 'org.projectlombok:lombok:1.18.22' // Verifica la versión actual
 	implementation 'org.postgresql:postgresql:42.2.27'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
 tasks.named('test') {

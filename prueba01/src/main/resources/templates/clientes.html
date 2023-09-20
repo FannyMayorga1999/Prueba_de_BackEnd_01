@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Clientes</title>
+</head>
+<body>
+<h1>Lista de Clientes</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Identificación</th>
+        <th>Nombre</th>
+        <th>Correo Electrónico</th>
+        <th>Teléfono</th>
+        <th>Beneficio</th>
+        <!-- Agrega más encabezados según tus necesidades -->
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Utiliza Thymeleaf para iterar sobre la lista de clientes y mostrar los datos -->
+    <tr th:each="cliente : ${clientes}">
+        <td th:text="${cliente.identification}"></td>
+        <td th:text="${cliente.name}"></td>
+        <td th:text="${cliente.email}"></td>
+        <td th:text="${cliente.phone}"></td>
+        <td th:text="${cliente.benefit}"></td>
+        <!-- Agrega más celdas según los atributos de tu modelo Cliente -->
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
